@@ -1,0 +1,434 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</head>
+
+
+<html>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="150">
+
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-6 col-md-3 col-lg-2 d-none d-md-block text-end">
+<h1>
+BAŞLIK
+</h1>
+</div>
+<div class="col-6 col-md-2  col-lg-4 text-center">
+
+</div>
+<div class="col-6 col-md-3 col-lg-3">
+test3
+</div>
+<div class="col-6 col-md-3 col-lg-3 m-auto">
+<a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">test4</a>
+</div>
+<div class="col-12 m-auto">
+<button class="btn btn-primary btn-sm">
+Button
+</button>
+<button class="btn btn-danger">
+Button
+</button>
+<button class="btn btn-danger disabled">
+Button
+</button>
+
+<button class="btn btn-outline-success">
+<span class="spinner-border spinner-border-sm"></span>
+Button
+</button>
+
+<div class="spinner-border text-primary">
+
+</div>
+<div class="spinner-grow text-danger">
+
+</div>
+
+
+
+<button class="btn btn-success position-relative">
+
+Gelen Kutusu
+<span class="position-absolute top-0 start-100 translate-middle badge bg-warning rounded-pill ">45</span>
+</button>
+</div>
+<div class="col-12">
+
+
+<span class="bg-warning text-primary ps-2">test6</span>
+
+<input type="text" />
+<span class="text-muted">m: margin, b:bottom, e: right(end), s: left(start), t: top, x: start-end, y: top-bottom , 1-5, m-auto</span>
+
+<span class="text-muted">p: padding, b:bottom, e: right(end), s: left(start), t: top, x: start-end, y: top-bottom , 1-5</span>
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="col">
+<table class="table table-bordered table-hover table-dark"> 
+
+<thead>
+  <tr>
+    <th>Ad</th>
+    <th>Soyad</th>
+    <th>Yaş</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <td>
+      Ali
+    </td>
+    <td>
+      Test
+    </td>
+    <td>
+      20
+    </td>
+  </tr>
+   <tr class="table-primary">
+    <td>
+      Ali
+    </td>
+    <td>
+      Test
+    </td>
+    <td>
+      20
+    </td>
+  </tr>
+  
+    <tr>
+    <td>
+      Ali
+    </td>
+    <td>
+      Test
+    </td>
+    <td>
+      20
+    </td>
+  </tr>
+  
+    <tr>
+    <td>
+      Ali
+    </td>
+    <td>
+      Test
+    </td>
+    <td>
+      20
+    </td>
+  </tr>
+</tbody>
+
+</table>
+</div>
+
+</div>
+
+
+<div class="row">
+<div class="col">
+<img src="https://i.ytimg.com/vi/S7SLep244ss/maxresdefault.jpg" class="img-fluid">
+</div>
+<div class="col">
+<img src="https://i.ytimg.com/vi/S7SLep244ss/maxresdefault.jpg" class="img-fluid rounded">
+</div>
+<div class="col">
+<img src="https://i.ytimg.com/vi/S7SLep244ss/maxresdefault.jpg" class="img-fluid rounded-circle">
+</div>
+
+</div>
+
+
+<div class="row mt-5">
+
+<div class="col">
+  <div class="alert alert-warning">
+    <strong>UYARI!</strong>Girdiğiniz mail adresi geçerli değildir.
+  </div>
+  <div class="alert alert-success" id="alrInfo">
+    işleminiz kaydedildi.
+  </div>
+    <div class="alert alert-danger">
+   
+  <div>
+  
+  
+    Kullanıcı adı veya şifreniz hatalı.
+    <button class="btn-close" data-bs-dismiss="alert">
+    
+    </button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+
+
+<div class="col">
+<button class="btn btn-primary">
+Excel Export
+</button>
+<button class="btn btn-primary">
+CSV Export
+</button>
+<button class="btn btn-primary">
+PDF Export
+</button>
+
+<button class="btn btn-secondary" id="btnModalAc">
+<i class="bi bi-valentine2 text-danger"></i>
+
+Modal Aç
+</button>
+
+<button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#testOffcanvas">
+<i class="bi bi-thermometer-sun"></i>
+Offcanvas Aç
+</button>
+<p class="h1" id="infotext">
+test2 <i class="bi bi-thermometer-sun"></i>
+</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Export
+    </button>
+     
+     <ul class="dropdown-menu">
+       <li class="dropdown-item"><button class="btn btn-success">
+       Excel
+       </button></li>
+       <li class="dropdown-item">CSV</li>
+       <li class="dropdown-item">PDF</li>
+      
+     </ul>
+     
+    </div>
+
+    <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#collapsePanel">
+    Collapse Panel
+    </button>
+
+    <div id="collapsePanel" class="border collapse">
+    Lorem ipsum dolor sit amet....
+    <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapsePanel2">
+    Inner Collapse Panel
+    </button>
+    
+    <div id="collapsePanel2" class="border collapse">
+     İç Panel
+    </div>
+    
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="carousel slide carousel-fade" id="test" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ytimg.com/vi/S7SLep244ss/maxresdefault.jpg" class="img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="https://webhakim.com/wp-content/uploads/2020/03/gorsel-zeka.png" class="img-fluid">
+        </div>
+      </div>
+      <div class="carousel-indicators">
+          <button class="active" data-bs-target="#test" data-bs-slide-to="0">
+           1
+          </button>
+          <button class="" data-bs-target="#test" data-bs-slide-to="1">
+           2
+          </button>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-control-prev" data-bs-target="#test" data-bs-slide="prev">
+        ÖNCEKİ
+        </button>
+        <button class="carousel-control-next" data-bs-target="#test" data-bs-slide="next">
+        SONRAKİ
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-2" >
+  <div class="col">
+      <input type="text" class="form-control" />
+      
+      <input type="file" class="form-control">
+  </div>
+</div>
+
+
+<div class="row">
+
+<div class="col-3">
+
+<nav class="navbar fixed-top">
+  <ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#section1">Section 1</a>
+    
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#section2">Section 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#section3">Section 3</a>
+  </li>
+  </ul>
+</nav>
+
+</div>
+<div class="col-9">
+<div id="section1" class="row">
+<hr>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut sem diam. Duis semper massa sapien, eu commodo nisi sagittis ut. Proin vel est sodales, faucibus risus at, facilisis mi. Donec at augue neque. Nam ac sapien ut dui convallis commodo. Suspendisse non ligula vitae ipsum semper pharetra et id mi. Nulla luctus sapien non posuere euismod. Nam ultrices, orci sit amet tincidunt efficitur, lorem risus dictum augue, id imperdiet ipsum ligula elementum urna. Mauris in malesuada neque. Quisque non porttitor felis. Duis sagittis mi eget nulla rutrum, non ultricies odio auctor. Donec sed interdum risus. Praesent porta odio eget vestibulum tincidunt. Mauris justo tellus, vestibulum eu risus ac, blandit accumsan lacus. Maecenas a erat purus.
+
+Suspendisse ultricies magna sit amet dolor sagittis commodo. Morbi nec mi ut eros feugiat viverra ac vitae nulla. Nullam sagittis posuere felis, sed semper tortor egestas quis. Nam sit amet orci et lorem condimentum pharetra. Curabitur feugiat semper eros, eget rutrum magna blandit in. Proin et ligula ultricies, congue leo in, luctus lorem. Mauris porttitor quis nisi ut dictum. Mauris ultricies a risus quis facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pellentesque gravida dictum. Nunc hendrerit rhoncus nisi vitae pretium.
+</div>
+
+<div id="section2" class="row">
+<hr>
+Praesent et tellus lorem. Etiam in lacus lorem. Nunc euismod diam nec malesuada vulputate. Curabitur turpis ante, faucibus vestibulum lorem id, faucibus vulputate leo. Donec ultrices egestas egestas. Mauris in metus semper, volutpat neque non, lobortis lorem. Pellentesque in ultrices ex, in suscipit lectus. Etiam risus ipsum, dignissim eget mollis in, ultricies eget elit.
+
+Pellentesque ante orci, luctus at hendrerit a, posuere eu augue. Quisque feugiat felis eget urna eleifend, non vehicula tellus eleifend. Sed eleifend facilisis risus, at condimentum lorem. Donec sit amet tellus in erat consectetur tempus sit amet vel arcu. Mauris lobortis mollis neque, eget venenatis ipsum scelerisque porta. Phasellus posuere ligula in justo efficitur ultrices. Vivamus tincidunt ante tellus, eu dignissim tortor eleifend eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis iaculis vulputate leo ut egestas.
+</div>
+
+<div id="section3" class="row">
+<hr>
+Suspendisse ultricies magna sit amet dolor sagittis commodo. Morbi nec mi ut eros feugiat viverra ac vitae nulla. Nullam sagittis posuere felis, sed semper tortor egestas quis. Nam sit amet orci et lorem condimentum pharetra. Curabitur feugiat semper eros, eget rutrum magna blandit in. Proin et ligula ultricies, congue leo in, luctus lorem. Mauris porttitor quis nisi ut dictum. Mauris ultricies a risus quis facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pellentesque gravida dictum. Nunc hendrerit rhoncus nisi vitae pretium.
+
+Praesent et tellus lorem. Etiam in lacus lorem. Nunc euismod diam nec malesuada vulputate. Curabitur turpis ante, faucibus vestibulum lorem id, faucibus vulputate leo. Donec ultrices egestas egestas. Mauris in metus semper, volutpat neque non, lobortis lorem. Pellentesque in ultrices ex, in suscipit lectus. Etiam risus ipsum, dignissim eget mollis in, ultricies eget elit.
+
+Pellentesque ante orci, luctus at hendrerit a, posuere eu augue. Quisque feugiat felis eget urna eleifend, non vehicula tellus eleifend. Sed eleifend facilisis risus, at condimentum lorem. Donec sit amet tellus in erat consectetur tempus sit amet vel arcu. Mauris lobortis mollis neque, eget venenatis ipsum scelerisque porta. Phasellus posuere ligula in justo efficitur ultrices. Vivamus tincidunt ante tellus, eu dignissim tortor eleifend eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis iaculis vulputate leo ut egestas.
+
+Nulla ut erat fermentum, condimentum risus eu, posuere nisi. Nulla eleifend elementum eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur quis iaculis arcu. Nunc auctor pretium sem, ac interdum dolor aliquam sit amet. Ut efficitur magna in bibendum gravida. Quisque eu blandit dolor, sed tincidunt purus. Duis luctus leo sed tortor egestas suscipit. Praesent velit orci, semper eu tellus vel, ornare sodales ante.
+
+
+</div>
+
+</div>
+
+
+</div>
+
+<div class="modal fade " id="testModal">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        Modal Başlığı 
+        <button class="btn-close" data-bs-dismiss="modal">
+        
+        </button>
+      </div>
+      
+      <div class="modal-body">
+      
+      <form>
+        <div class="row">
+            <div class="col-6">
+              <label class="form-label" for="ad">Adınız</label>
+              <input type="text" class="form-control" id="ad" placeholder="Adınız" />
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="soyad">Soyadnız</label>
+              <input type="text" class="form-control" id="soyad" placeholder="Soyadnız" />
+            </div>
+        </div>
+         <div class="row mt-1">
+            <div class="col-12">
+              <label class="form-label" for="adres">Adres</label>
+              <input type="text" class="form-control"id="adres" placeholder="Adınız" />
+            </div>
+           
+        </div>
+        
+         <div class="row">
+            <div class="col-6">
+              <label class="form-label" for="sehir">Şehir</label>
+              <select class="form-select" id="sehir">
+              <option value="">Seçiniz</option>
+              <option value="">İstanbul</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="cv">CV</label>
+              <input type="file" class="form-control"id="cv" placeholder="CV Yükleyin" />
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-12">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Default checkbox
+  </label>
+</div>
+        </div>
+        </div>
+      </form>
+      
+      </div>
+      
+      <div class="modal-footer">
+      
+          <button class="btn btn-info" id="btnGonder" >
+          KAYDET
+          </button>
+          <button class="btn btn-warning" id="btnModalKapat" >
+          KAPAT
+          </button>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="offcanvas offcanvas-start" id="testOffcanvas">
+  <div class="offcanvas-header">
+
+  </div>
+  <div class="offcanvas-body">
+    MENU İÇERİĞİ
+  </div>
+  <div class="offcanvas-footer">
+
+  </div>
+</div>
+
+
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript">
+function topla()
+{
+	var s1,s2;
+	s1=parseFloat(formum.sayi1.value);
+	s2=parseFloat(formum.sayi2.value);
+	formum.sonuc.value= s1+s2;
+}
+function cikar()
+{
+	 formum.sonuc.value=parseFloat(formum.sayi1.value)-parseFloat(formum.sayi2.value);
+}
+function carp()
+{
+	formum.sonuc.value=parseFloat(formum.sayi1.value)*parseFloat(formum.sayi2.value);
+}
+function bol()
+{
+	if(parseFloat(formum.sayi2.value)=='0'|| parseFloat(formum.sayi2.value)=="")
+	{
+		alert("sıfıra bölme işlemi yapılamaz.");
+	}
+	else
+	{
+		formum.sonuc.value=parseFloat(formum.sayi1.value)/parseFloat(formum.sayi2.value);
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="formum">
+<table width="200" bgcolor="#aaaaaa" border="0">
+<tr>
+<td>1.sayı:</td>
+<td><input type="text" name="sayi1" /></td>
+<td><input type="button" value="+" onclick="topla()" /></td>
+<td><input type="button" value="-" onclick="cikar()" /></td>
+</tr>
+<tr>
+<td>2.sayı:</td>
+<td><input type="text" name="sayi2" /></td>
+<td><input type="button" value="*" onclick="carp()" /></td>
+<td><input type="button" value="/" onclick="bol()" /></td>
+</tr>
+<tr>
+<td>sonuç:</td>
+<td><input type="text" name="sonuc" /></td>
+<td><input type="reset" value="temizle" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

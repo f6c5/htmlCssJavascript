@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+<link rel="stylesheet" type="text/css" href="menu.css" />
+<link rel="stylesheet" type="text/css" href="sayfa.css" />
+<style type="text/css">
+
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.button.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+</script>
+</head>
+
+<body bgcolor="#003333">
+<div class="site">
+<div class="ust">
+<div class="logo">
+  <img src="logo.fw.png" width="119" height="61"  alt=""/>
+</div>
+  <div class="menu">
+    <ul>
+
+	<li><a href="a1.html">ana sayfa</a></li>
+	<li><a href="#">katagoriler</a>
+		<ul>
+			<li><a href="m1.html">macera</a></li>
+            <li><a href="ak1.html">aksiyon</a></li>
+            <li><a href="b1.html">bilim kurgu</a></li>
+            <li><a href="k1.html">korku</a></li>
+            <li><a href="d1.html">dram</a></li>
+            <li><a href="ko1.html">komedi</a></li>
+            <li><a href="an1.html">animasyon</a></li>
+		</ul>
+    </li>
+	<li><a href="en1.html">en çok izlenenler</a></li>
+	<li><a href="kaydol.html">kaydol/girişyap</a></li>
+</ul>
+</div>
+  <hr width="1050">
+</div>
+<div class="bas">
+  <p>girisyap</p>
+</div>
+<div class="form">
+  <table width="549" border="0">
+    <form id="form" name="gırısyap" method="post" action="a1.html">
+      <tr>
+        <td width="125">e-posta</td>
+        <td width="400"> :
+          <input type="email" size="50"></td>
+      </tr>
+      <tr>
+        <td>şifre</td>
+        <td> :
+          <input type="password" size="50"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><center>
+          <input type="submit" name="button" id="button" value="gönder" />
+          <input type="reset" name="button2" id="button2" value="temizle" />
+        </center></td>
+      </tr>
+    </form>
+  </table>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
+</body>
+</html>

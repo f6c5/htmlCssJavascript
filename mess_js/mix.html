@@ -1,0 +1,50 @@
+<html>
+<script src="mix.js"></script>
+<body>
+
+<div>
+Sayı: <input type="text" id="sayi" />
+</div>
+<div>
+<button onclick="hesapla()" >
+HESAPLA
+</button>
+<button onclick="asalMi()">
+ASAL MI
+</button>
+
+</div>
+<div>
+
+Sonuç: <span id="sonuc"></span>
+</div>
+<hr>
+
+<div>
+<button onclick="azalt()">
+-
+</button> 
+<span id="deger">0</span>
+<button onclick="arttir()">
++
+</button>
+</div>
+
+<hr>
+
+<div>
+<button onclick="degistir()">
+DEĞİŞTİR
+</button>
+</div>
+
+<hr>
+
+<button onmouseenter="otomatikDegistir()" onmouseout="degisimiDurdur()">
+ÜZERİNDEYKEN ÇALIŞTIR
+</button>
+</div>
+
+</body>
+
+</html>

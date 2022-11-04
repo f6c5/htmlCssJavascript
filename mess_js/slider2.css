@@ -1,0 +1,41 @@
+.slidercon {
+  position: absolute;
+  box-sizing: border-box;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+}
+.img-container {
+  display: flex;
+  transition: transform 300ms ease-in-out;
+}
+.next, .previous{
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  opacity: 0.75;
+  transition: opacity 100ms ease-in-out;
+  z-index: 100;
+}
+.next:hover, .previous:hover {
+  opacity: 1;
+}
+.previous {
+  left: 0px;
+  height: 500px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.548);
+}
+.next {
+  right: 0px;
+  height: 500px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.548);
+}

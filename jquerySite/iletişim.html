@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.bas {	height: 100px;
+	width: 100%;
+	background-color: #003;
+}
+.site {width: 840px;
+	height:840px;
+	padding-top: 15px;
+}
+.sol {
+	float: left;
+	width: 175px;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="site">
+  <div class="bas"><img src="logo.png" width="200" height="70" /></div>
+  <p>&nbsp;</p>
+  <div class="sol">
+    <ul id="MenuBar1" class="MenuBarVertical">
+      <li><a href="index.html">anasayfa</a></li>
+      <li><a href="resimler.html">resimler</a></li>
+      <li><a href="iletişim.html">iletişim</a></li>
+    </ul>
+</div>
+  <div class="ic">
+    <div class="baslik"> <b>iletişim</b>
+      <hr />
+    </div>
+    
+      <div class="form">
+      
+      <table width="500" border="0">
+       <form id="form1" name="form1" method="post" action="mesaj.html">
+        <tr>
+          <td>ad:</td>
+          <td>
+         
+              <label for="ad"></label>
+              <input type="text" name="ad" id="ad" />
+          </td>
+        </tr>
+        <tr>
+          <td>konu:</td>
+          <td>
+            <input type="radio" name="radio" id="oneri" value="oneri" />
+            <label for="oneri">öneri</label>
+            <input type="radio" name="radio" id="sikayet" value="sikayet" />
+            <label for="sikayet">şikayet</label>
+            <input type="radio" name="radio" id="istek" value="istek" />
+            <label for="istek">istek</label>
+          </td>
+        </tr>
+        <tr>
+          <td>mesaj:</td>
+          <td>
+            <label for="mesaj"></label>
+            <textarea name="mesaj" id="mesaj" cols="45" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+          <input type="submit" name="button" id="button" value="gönder" />
+          <input type="reset" name="button2" id="button2" value="temizle" />
+          </td>
+
+        </tr>
+        </form>
+      </table>
+      
+      </div>
+
+  </div>
+  </div>
+
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

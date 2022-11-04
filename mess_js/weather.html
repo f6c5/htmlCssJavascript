@@ -1,0 +1,73 @@
+<html>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<style>
+    .container {
+  width:100%;
+  
+}
+
+.weather-box {
+  width:200px;
+  margin: auto;
+  border: solid 1px #ccc;
+  border-radius: 16px;
+  text-align: center;
+  padding: 16px;
+  
+}
+
+#icondiv {
+  padding-top: 20px;
+  padding-bottom:20px;
+  
+}
+
+#icon {
+  width: 90px;
+}
+
+.search {
+  text-align: center;
+}
+</style>
+
+<body>
+  <div class="container">
+  
+    <div class="weather-box">
+      <div id="title">
+        İSTANBUL
+      </div>
+      
+      <div id="icondiv">
+        <img id="icon" src="" title="hava durumu" />
+      </div>
+      
+      <div id="degree">
+       30 &#176C
+      </div>
+      
+    </div>
+  
+  <div class="search">
+  <input type="text" id="coordinates" value="40.23002681418469, 29.006268156583555">
+  <button id="sorgula">
+  SORGULA
+  </button>
+  
+  <br>
+  <button id="location">
+  KONUMUMU AL
+  </button>
+  
+  <span id="error"></span>
+  </div>
+  
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
+

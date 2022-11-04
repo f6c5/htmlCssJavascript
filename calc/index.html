@@ -1,0 +1,121 @@
+<head>
+
+    <meta charset="UTF-8">
+    
+  
+  
+    <title>hesap makinesi</title>
+    
+    
+    
+    
+  
+    <script>
+    window.console = window.console || function(t) {};
+  </script>
+  
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  
+  
+  </head>
+  
+  <body translate="no">
+    
+  
+    
+    <tittle>hesap makinesi</tittle>
+      <style>
+           .container{
+              background-color: black;
+              width: 300px;
+              height: 450px;
+              margin-left: 20px;
+              margin-top: 50px;
+              border-radius: 20px;
+  
+          }
+          input[type=text]{
+              font-weight: bolder;
+              font-size: 40px;
+              color: black;
+              margin-top: 20px;
+              margin-left: 20px;
+              width: 250px;
+              height: 50px;
+              border-radius: 5px;
+              border: 5x solid white;
+          }
+          input[type=button]{
+              width: 40px;
+              height: 40px;
+              margin-left: 25px;
+              background-color: grey;
+              color: white;
+              font-weight: bolder;
+              font-size: x-large; 
+          }
+          input[type=button]:hover{
+              background-color: dodgerblue;
+          }
+           
+          p{
+              color: white;
+              font-size: 20px;
+              font-weight: bolder;
+              padding-top: 20px;
+              padding-left: 20px;
+          }
+        </style>
+    
+      <div class="container">
+              <p>Cello</p>
+              <input type="text" id="display" disabled=""><br><br>
+              <input type="button" value="C" onclick="display.value=''" style="margin-left: 231px; background-color:red"><br><br>
+              <input type="button" value="7" onclick="btn(value)">
+              <input type="button" value="8" onclick="btn(value)">
+              <input type="button" value="9" onclick="btn(value)">
+              <input type="button" value="+" onclick="btn(value)" style="background-color:blue;"><br><br>
+              <input type="button" value="4" onclick="btn(value)">
+              <input type="button" value="5" onclick="btn(value)">
+              <input type="button" value="6" onclick="btn(value)">
+              <input type="button" value="-" onclick="btn(value)" style="background-color:blue"><br><br>
+              <input type="button" value="1" onclick="btn(value)">
+              <input type="button" value="2" onclick="btn(value)">
+              <input type="button" value="3" onclick="btn(value)">
+              <input type="button" value="*" onclick="btn(value)" style="background-color:blue"><br><br>
+              <input type="button" value="." onclick="btn(value)">
+              <input type="button" value="0" onclick="btn(value)">
+              <input type="button" value="=" onclick="result()">
+              <input type="button" value="/" onclick="btn(value)" style="background-color:blue"><br><br>
+          <script>
+              var display=document.getElementById('display');
+              function btn(value){ 
+                  display.value += value;
+              }
+              function clear(){
+                  display.value=" ";
+              }
+              function result(){
+                  var result = eval(display.value);
+                  display.value = result;
+              }
+          </script>
+      </div>
+  
+  
+    
+    
+    
+    
+  
+  
+  
+  
+   
+  </body>
